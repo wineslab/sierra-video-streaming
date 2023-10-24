@@ -1,0 +1,11 @@
+[Unit]
+Description=Video Streaming
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/wines-nuc8/sakthi/sierra-video-streaming/start-video.sh
+User=wines-nuc8
+
+[Install]
+WantedBy=multi-user.target
